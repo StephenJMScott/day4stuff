@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width", initial-scale="1" charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>Navagation Bar</title>
             <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
             <link rel="stylesheet" type="text/css" href="reset.css">
@@ -29,9 +29,27 @@
                     background-color:#1D2026;
                 }
                 
+                
+                
+                
                 nav ul li:hover {
                     background-color:#555;
                     transition: all .3s ease;
+                }
+                
+                nav ul li:active{
+                    background-color:white;
+                }
+                
+                nav ul li:on-click{
+                    color:red;
+                }
+                
+                li:last-of-type{
+                    font-size:30px;
+                    border-bottom:0;
+                    padding:10px 5px;
+                    background-color:#1D2026;
                 }
                 
                 @media screen and (min-width:665px){
@@ -54,7 +72,6 @@
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Contact</a></li>
-                
             </ul>
         </nav>
     </body>
